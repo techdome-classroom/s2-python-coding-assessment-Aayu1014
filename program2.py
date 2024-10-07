@@ -10,9 +10,3 @@ class Solution(object):
                 total += roman_map[s[i]]
         
         return total
-
-# Example usage:
-solution = Solution()
-print(solution.romanToInt("III"))      # Output: 3
-print(solution.romanToInt("LVIII"))    # Output: 58
-print(solution.romanToInt("MCMXCIV"))  # Output: 1994
