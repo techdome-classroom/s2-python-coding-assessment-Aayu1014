@@ -2,12 +2,12 @@ class Solution(object):
     def isValid(self, s):
         bracket_map = {')': '(', '}': '{', ']': '['}
         stack = []
-        for char in s:
-            if char in bracket_map:
+        for ch in s:
+            if ch in bracket_map:
                 top_element = stack.pop() if stack else '#'
-                if bracket_map[char] != top_element:
+                if bracket_map[ch] != top_element:
                     return False
             else:
-                stack.append(char)        
+                stack.append(ch)        
         return not stack
 
