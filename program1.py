@@ -9,7 +9,6 @@ class Solution(object):
                 if bracket_map[char] != top_element:
                     return False
             else:
-                stack.append(char)
-        
+                stack.append(char)        
         return not stack
 
